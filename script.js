@@ -1,10 +1,5 @@
 // script of ready buttons! //
 
-if (sessionStorage.getItem('is_auth') === "false") {
-    window.location.href ="in.html";
-    console.log("not auth")
-};
-
 document.body.style.margin="0";
 document.body.style.overflowX="hidden";
 
