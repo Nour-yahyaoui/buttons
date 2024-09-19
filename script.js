@@ -817,11 +817,922 @@ function footer() {
     const footer = document.createElement('footer');
     const header = document.createElement('h3');
     const ul = document.createElement('ul')
+    footer.id = 'footer'
 
     document.getElementById('cont').appendChild(footer)
 }
 
+function colors()  {
+    const container = document.createElement('div')
+    container.id = 'colors'
+    container.style.display = 'none'
+    container.style.flexDirection = 'row'
+    container.style.flexWrap = 'wrap'
+    container.style.background = 'white'
+    container.style.maxWidth = '1000px'
+    container.style.paddingTop = '50px'
+    container.style.height = 'auto'
+    container.style.gap = '40px'
+    container.style.justifyContent = 'space-evenly'
+    container.style.alignItems = 'center'
+    const colorCont = document.createElement('div')
 
+    colorCont.id = 'colorCont'
+    colorCont.style.width ='90%'
+    colorCont.style.height = 'auto'
+    colorCont.style.borderRadius = '10px'
+    colorCont.style.border = 'none'
+    colorCont.style.background = 'white'
+    colorCont.style.display = 'flex'
+    colorCont.style.flexDirection = 'row'
+    colorCont.style.flexWrap = 'wrap'
+    colorCont.style.gap = '20px'
+    colorCont.style.alignItems = 'center'
+
+    const color1 = document.createElement('div')
+    const cont = document.createElement('div')
+    cont.style.display = 'grid'
+    cont.style.gap = '10px'
+    cont.style.margin = 'auto'
+    cont.style.width = '300px'
+    color1.style.width = '90%'
+    color1.style.height = '200px'
+    color1.style.background = '#123456'
+    color1.style.borderRadius = '10px'
+    color1.style.margin = '4px'
+    const color1code = document.createElement('p')
+    color1code.style.color = 'gray'
+    color1code.style.fontSize = '16px'
+    color1code.style.fontFamily = 'monospace'
+    color1code.textContent = 'Color code: #123456'
+    const hr = document.createElement('hr')
+    hr.style.borderColor = 'black'
+
+    cont.appendChild(color1)
+    cont.appendChild(color1code)
+    colorCont.appendChild(cont)
+
+    const color2 = document.createElement('div')
+    const cont2 = document.createElement('div')
+    cont2.style.display = 'grid'
+    cont2.style.gap = '10px'
+    cont2.style.margin = 'auto'
+    cont2.style.width = '300px'
+    color2.style.width = '90%'
+    color2.style.height = '200px'
+    color2.style.background = '#a1f'
+    color2.style.borderRadius = '10px'
+    color2.style.margin = '4px'
+    const color2code = document.createElement('p')
+    color2code.style.color = 'gray'
+    color2code.style.fontSize = '16px'
+    color2code.style.fontFamily = 'monospace'
+    color2code.textContent = 'Color code: #a1f'
+    
+
+    cont2.appendChild(color2)
+    cont2.appendChild(color2code)
+    colorCont.appendChild(cont2)
+    
+    
+    const color3 = document.createElement('div')
+    const cont3 = document.createElement('div')
+    cont3.style.display = 'grid'
+    cont3.style.gap = '10px'
+    cont3.style.margin = 'auto'
+    cont3.style.width = '300px'
+    color3.style.width = '90%'
+    color3.style.height = '200px'
+    color3.style.background = '#dc3545'
+    color3.style.borderRadius = '10px'
+    color3.style.margin = '4px'
+    const color3code = document.createElement('p')
+    color3code.style.color = 'gray'
+    color3code.style.fontSize = '16px'
+    color3code.style.fontFamily = 'monospace'
+    color3code.textContent = 'Color code: #dc3545'
+    
+
+    cont3.appendChild(color3)
+    cont3.appendChild(color3code)
+    colorCont.appendChild(cont3)
+    
+    const color4 = document.createElement('div')
+    const cont4 = document.createElement('div')
+    cont4.style.display = 'grid'
+    cont4.style.gap = '10px'
+    cont4.style.margin = 'auto'
+    cont4.style.width = '300px'
+    color4.style.width = '90%'
+    color4.style.height = '200px'
+    color4.style.background = '#11111a'
+    color4.style.borderRadius = '10px'
+    color4.style.margin = '4px'
+    const color4code = document.createElement('p')
+    color4code.style.color = 'gray'
+    color4code.style.fontSize = '16px'
+    color4code.style.fontFamily = 'monospace'
+    color4code.textContent = 'Color code: #11111a'
+    
+
+    cont4.appendChild(color4)
+    cont4.appendChild(color4code)
+    colorCont.appendChild(cont4)
+    
+    const color5 = document.createElement('div')
+    const cont5 = document.createElement('div')
+    cont5.style.display = 'grid'
+    cont5.style.gap = '10px'
+    cont5.style.margin = 'auto'
+    cont5.style.width = '300px'
+    color5.style.width = '90%'
+    color5.style.height = '200px'
+    color5.style.background = '#339933'
+    color5.style.borderRadius = '10px'
+    color5.style.margin = '4px'
+    const color5code = document.createElement('p')
+    color5code.style.color = 'gray'
+    color5code.style.fontSize = '16px'
+    color5code.style.fontFamily = 'monospace'
+    color5code.textContent = 'Color code: #339933'
+    
+
+    cont5.appendChild(color5)
+    cont5.appendChild(color5code)
+    colorCont.appendChild(cont5)
+    
+    const color6 = document.createElement('div')
+    const cont6 = document.createElement('div')
+    cont6.style.display = 'grid'
+    cont6.style.gap = '10px'
+    cont6.style.margin = 'auto'
+    cont6.style.width = '300px'
+    color6.style.width = '90%'
+    color6.style.height = '200px'
+    color6.style.background = '#222327'
+    color6.style.borderRadius = '10px'
+    color6.style.margin = '4px'
+    const color6code = document.createElement('p')
+    color6code.style.color = 'gray'
+    color6code.style.fontSize = '16px'
+    color6code.style.fontFamily = 'monospace'
+    color6code.textContent = 'Color code: #222327'
+    
+
+    cont6.appendChild(color6)
+    cont6.appendChild(color6code)
+    colorCont.appendChild(cont6)
+    
+    const color7 = document.createElement('div')
+    const cont7 = document.createElement('div')
+    cont7.style.display = 'grid'
+    cont7.style.gap = '10px'
+    cont7.style.margin = 'auto'
+    cont7.style.width = '300px'
+    color7.style.width = '90%'
+    color7.style.height = '200px'
+    color7.style.background = '#59ce8f'
+    color7.style.borderRadius = '10px'
+    color7.style.margin = '4px'
+    const color7code = document.createElement('p')
+    color7code.style.color = 'gray'
+    color7code.style.fontSize = '16px'
+    color7code.style.fontFamily = 'monospace'
+    color7code.textContent = 'Color code: #59ce8f'
+    
+
+    cont7.appendChild(color7)
+    cont7.appendChild(color7code)
+    colorCont.appendChild(cont7)
+    
+    const color8 = document.createElement('div')
+    const cont8 = document.createElement('div')
+    cont8.style.display = 'grid'
+    cont8.style.gap = '10px'
+    cont8.style.margin = 'auto'
+    cont8.style.width = '300px'
+    color8.style.width = '90%'
+    color8.style.height = '200px'
+    color8.style.background = 'tan'
+    color8.style.borderRadius = '10px'
+    color8.style.margin = '4px'
+    const color8code = document.createElement('p')
+    color8code.style.color = 'gray'
+    color8code.style.fontSize = '16px'
+    color8code.style.fontFamily = 'monospace'
+    color8code.textContent = 'Color code: tan'
+    
+
+    cont8.appendChild(color8)
+    cont8.appendChild(color8code)
+    colorCont.appendChild(cont8)
+    
+    const color9 = document.createElement('div')
+    const cont9 = document.createElement('div')
+    cont9.style.display = 'grid'
+    cont9.style.gap = '10px'
+    cont9.style.margin = 'auto'
+    cont9.style.width = '300px'
+    color9.style.width = '90%'
+    color9.style.height = '200px'
+    color9.style.background = 'tomato'
+    color9.style.borderRadius = '10px'
+    color9.style.margin = '4px'
+    const color9code = document.createElement('p')
+    color9code.style.color = 'gray'
+    color9code.style.fontSize = '16px'
+    color9code.style.fontFamily = 'monospace'
+    color9code.textContent = 'Color code: tomato'
+    
+
+    cont9.appendChild(color9)
+    cont9.appendChild(color9code)
+    colorCont.appendChild(cont9)
+    
+    const color12 = document.createElement('div')
+    const cont12 = document.createElement('div')
+    cont12.style.display = 'grid'
+    cont12.style.gap = '10px'
+    cont12.style.margin = 'auto'
+    cont12.style.width = '300px'
+    color12.style.width = '90%'
+    color12.style.height = '200px'
+    color12.style.background = '#032B44'
+    color12.style.borderRadius = '10px'
+    color12.style.margin = '4px'
+    const color12code = document.createElement('p')
+    color12code.style.color = 'gray'
+    color12code.style.fontSize = '16px'
+    color12code.style.fontFamily = 'monospace'
+    color12code.textContent = 'Color code: #032B44'
+    
+
+    cont12.appendChild(color12)
+    cont12.appendChild(color12code)
+    colorCont.appendChild(cont12)
+    
+    const color13 = document.createElement('div')
+    const cont13 = document.createElement('div')
+    cont13.style.display = 'grid'
+    cont13.style.gap = '10px'
+    cont13.style.margin = 'auto'
+    cont13.style.width = '300px'
+    color13.style.width = '90%'
+    color13.style.height = '200px'
+    color13.style.background = '#32CD32'
+    color13.style.borderRadius = '10px'
+    color13.style.margin = '4px'
+    const color13code = document.createElement('p')
+    color13code.style.color = 'gray'
+    color13code.style.fontSize = '16px'
+    color13code.style.fontFamily = 'monospace'
+    color13code.textContent = 'Color code: #32CD32'
+    
+
+    cont13.appendChild(color13)
+    cont13.appendChild(color13code)
+    colorCont.appendChild(cont13)
+    
+    const color14 = document.createElement('div')
+    const cont14 = document.createElement('div')
+    cont14.style.display = 'grid'
+    cont14.style.gap = '10px'
+    cont14.style.margin = 'auto'
+    cont14.style.width = '300px'
+    color14.style.width = '90%'
+    color14.style.height = '200px'
+    color14.style.background = '#FFD7BE'
+    color14.style.borderRadius = '10px'
+    color14.style.margin = '4px'
+    const color14code = document.createElement('p')
+    color14code.style.color = 'gray'
+    color14code.style.fontSize = '16px'
+    color14code.style.fontFamily = 'monospace'
+    color14code.textContent = 'Color code: #FFD7BE'
+    
+
+    cont14.appendChild(color14)
+    cont14.appendChild(color14code)
+    colorCont.appendChild(cont14)
+    
+    const color15 = document.createElement('div')
+    const cont15 = document.createElement('div')
+    cont15.style.display = 'grid'
+    cont15.style.gap = '10px'
+    cont15.style.margin = 'auto'
+    cont15.style.width = '300px'
+    color15.style.width = '90%'
+    color15.style.height = '200px'
+    color15.style.background = '#E4D6F5'
+    color15.style.borderRadius = '10px'
+    color15.style.margin = '4px'
+    const color15code = document.createElement('p')
+    color15code.style.color = 'gray'
+    color15code.style.fontSize = '16px'
+    color15code.style.fontFamily = 'monospace'
+    color15code.textContent = 'Color code: #E4D6F5'
+    
+
+    cont15.appendChild(color15)
+    cont15.appendChild(color15code)
+    colorCont.appendChild(cont15)
+    
+    const color16 = document.createElement('div')
+    const cont16 = document.createElement('div')
+    cont16.style.display = 'grid'
+    cont16.style.gap = '10px'
+    cont16.style.margin = 'auto'
+    cont16.style.width = '300px'
+    color16.style.width = '90%'
+    color16.style.height = '200px'
+    color16.style.background = '#ACFFAC'
+    color16.style.borderRadius = '10px'
+    color16.style.margin = '4px'
+    const color16code = document.createElement('p')
+    color16code.style.color = 'gray'
+    color16code.style.fontSize = '16px'
+    color16code.style.fontFamily = 'monospace'
+    color16code.textContent = 'Color code: #ACFFAC'
+    
+
+    cont16.appendChild(color16)
+    cont16.appendChild(color16code)
+    colorCont.appendChild(cont16)
+    
+    const color17 = document.createElement('div')
+    const cont17 = document.createElement('div')
+    cont17.style.display = 'grid'
+    cont17.style.gap = '10px'
+    cont17.style.margin = 'auto'
+    cont17.style.width = '300px'
+    color17.style.width = '90%'
+    color17.style.height = '200px'
+    color17.style.background = '#FFD700'
+    color17.style.borderRadius = '10px'
+    color17.style.margin = '4px'
+    const color17code = document.createElement('p')
+    color17code.style.color = 'gray'
+    color17code.style.fontSize = '16px'
+    color17code.style.fontFamily = 'monospace'
+    color17code.textContent = 'Color code: #FFD700'
+    
+
+    cont17.appendChild(color17)
+    cont17.appendChild(color17code)
+    colorCont.appendChild(cont17)
+    
+    const color18 = document.createElement('div')
+    const cont18 = document.createElement('div')
+    cont18.style.display = 'grid'
+    cont18.style.gap = '10px'
+    cont18.style.margin = 'auto'
+    cont18.style.width = '300px'
+    color18.style.width = '90%'
+    color18.style.height = '200px'
+    color18.style.background = '#87CEEB'
+    color18.style.borderRadius = '10px'
+    color18.style.margin = '4px'
+    const color18code = document.createElement('p')
+    color18code.style.color = 'gray'
+    color18code.style.fontSize = '16px'
+    color18code.style.fontFamily = 'monospace'
+    color18code.textContent = 'Color code: #87CEEB'
+    
+
+    cont18.appendChild(color18)
+    cont18.appendChild(color18code)
+    colorCont.appendChild(cont18)
+    
+    const color19 = document.createElement('div')
+    const cont19 = document.createElement('div')
+    cont19.style.display = 'grid'
+    cont19.style.gap = '10px'
+    cont19.style.margin = 'auto'
+    cont19.style.width = '300px'
+    color19.style.width = '90%'
+    color19.style.height = '200px'
+    color19.style.background = '#FF9900'
+    color19.style.borderRadius = '10px'
+    color19.style.margin = '4px'
+    const color19code = document.createElement('p')
+    color19code.style.color = 'gray'
+    color19code.style.fontSize = '16px'
+    color19code.style.fontFamily = 'monospace'
+    color19code.textContent = 'Color code: #FF9900'
+    
+
+    cont19.appendChild(color19)
+    cont19.appendChild(color19code)
+    colorCont.appendChild(cont19)
+    const color21 = document.createElement('div')
+const cont21 = document.createElement('div')
+cont21.style.display = 'grid'
+cont21.style.gap = '10px'
+cont21.style.margin = 'auto'
+cont21.style.width = '300px'
+color21.style.width = '90%'
+color21.style.height = '200px'
+color21.style.background = '#3498db'
+color21.style.borderRadius = '10px'
+color21.style.margin = '4px'
+const color21code = document.createElement('p')
+color21code.style.color = 'gray'
+color21code.style.fontSize = '16px'
+color21code.style.fontFamily = 'monospace'
+color21code.textContent = 'Color code: #3498db'
+
+cont21.appendChild(color21)
+cont21.appendChild(color21code)
+colorCont.appendChild(cont21)
+
+const color22 = document.createElement('div')
+const cont22 = document.createElement('div')
+cont22.style.display = 'grid'
+cont22.style.gap = '10px'
+cont22.style.margin = 'auto'
+cont22.style.width = '300px'
+color22.style.width = '90%'
+color22.style.height = '200px'
+color22.style.background = '#8bc34a'
+color22.style.borderRadius = '10px'
+color22.style.margin = '4px'
+const color22code = document.createElement('p')
+color22code.style.color = 'gray'
+color22code.style.fontSize = '16px'
+color22code.style.fontFamily = 'monospace'
+color22code.textContent = 'Color code: #8bc34a'
+
+cont22.appendChild(color22)
+cont22.appendChild(color22code)
+colorCont.appendChild(cont22)
+
+const color23 = document.createElement('div')
+const cont23 = document.createElement('div')
+cont23.style.display = 'grid'
+cont23.style.gap = '10px'
+cont23.style.margin = 'auto'
+cont23.style.width = '300px'
+color23.style.width = '90%'
+color23.style.height = '200px'
+color23.style.background = '#e74c3c'
+color23.style.borderRadius = '10px'
+color23.style.margin = '4px'
+const color23code = document.createElement('p')
+color23code.style.color = 'gray'
+color23code.style.fontSize = '16px'
+color23code.style.fontFamily = 'monospace'
+color23code.textContent = 'Color code: #e74c3c'
+
+cont23.appendChild(color23)
+cont23.appendChild(color23code)
+colorCont.appendChild(cont23)
+
+const color24 = document.createElement('div')
+const cont24 = document.createElement('div')
+cont24.style.display = 'grid'
+cont24.style.gap = '10px'
+cont24.style.margin = 'auto'
+cont24.style.width = '300px'
+color24.style.width = '90%'
+color24.style.height = '200px'
+color24.style.background = '#2ecc71'
+color24.style.borderRadius = '10px'
+color24.style.margin = '4px'
+const color24code = document.createElement('p')
+color24code.style.color = 'gray'
+color24code.style.fontSize = '16px'
+color24code.style.fontFamily = 'monospace'
+color24code.textContent = 'Color code: #2ecc71'
+
+cont24.appendChild(color24)
+cont24.appendChild(color24code)
+colorCont.appendChild(cont24)
+
+const color25 = document.createElement('div')
+const cont25 = document.createElement('div')
+cont25.style.display = 'grid'
+cont25.style.gap = '10px'
+cont25.style.margin = 'auto'
+cont25.style.width = '300px'
+color25.style.width = '90%'
+color25.style.height = '200px'
+color25.style.background = '#4CAF50'
+color25.style.borderRadius = '10px'
+color25.style.margin = '4px'
+const color25code = document.createElement('p')
+color25code.style.color = 'gray'
+color25code.style.fontSize = '16px'
+color25code.style.fontFamily = 'monospace'
+color25code.textContent = 'Color code: #4CAF50'
+
+cont25.appendChild(color25)
+cont25.appendChild(color25code)
+colorCont.appendChild(cont25)
+
+const color26 = document.createElement('div')
+const cont26 = document.createElement('div')
+cont26.style.display = 'grid'
+cont26.style.gap = '10px'
+cont26.style.margin = 'auto'
+cont26.style.width = '300px'
+color26.style.width = '90%'
+color26.style.height = '200px'
+color26.style.background = '#03A9F4'
+color26.style.borderRadius = '10px'
+color26.style.margin = '4px'
+const color26code = document.createElement('p')
+color26code.style.color = 'gray'
+color26code.style.fontSize = '16px'
+color26code.style.fontFamily = 'monospace'
+color26code.textContent = 'Color code: #03A9F4'
+
+cont26.appendChild(color26)
+cont26.appendChild(color26code)
+colorCont.appendChild(cont26)
+
+const color27 = document.createElement('div')
+const cont27 = document.createElement('div')
+cont27.style.display = 'grid'
+cont27.style.gap = '10px'
+cont27.style.margin = 'auto'
+cont27.style.width = '300px'
+color27.style.width = '90%'
+color27.style.height = '200px'
+color27.style.background = '#FF9800'
+color27.style.borderRadius = '10px'
+color27.style.margin = '4px'
+const color27code = document.createElement('p')
+color27code.style.color = 'gray'
+color27code.style.fontSize = '16px'
+color27code.style.fontFamily = 'monospace'
+color27code.textContent = 'Color code: #FF9800'
+
+cont27.appendChild(color27)
+cont27.appendChild(color27code)
+colorCont.appendChild(cont27)
+const color28 = document.createElement('div')
+const cont28 = document.createElement('div')
+cont28.style.display = 'grid'
+cont28.style.gap = '10px'
+cont28.style.margin = 'auto'
+cont28.style.width = '300px'
+color28.style.width = '90%'
+color28.style.height = '200px'
+color28.style.background = '#9C27B0'
+color28.style.borderRadius = '10px'
+color28.style.margin = '4px'
+const color28code = document.createElement('p')
+color28code.style.color = 'gray'
+color28code.style.fontSize = '16px'
+color28code.style.fontFamily = 'monospace'
+color28code.textContent = 'Color code: #9C27B0'
+
+cont28.appendChild(color28)
+cont28.appendChild(color28code)
+colorCont.appendChild(cont28)
+
+const color29 = document.createElement('div')
+const cont29 = document.createElement('div')
+cont29.style.display = 'grid'
+cont29.style.gap = '10px'
+cont29.style.margin = 'auto'
+cont29.style.width = '300px'
+color29.style.width = '90%'
+color29.style.height = '200px'
+color29.style.background = '#66D9EF'
+color29.style.borderRadius = '10px'
+color29.style.margin = '4px'
+const color29code = document.createElement('p')
+color29code.style.color = 'gray'
+color29code.style.fontSize = '16px'
+color29code.style.fontFamily = 'monospace'
+color29code.textContent = 'Color code: #66D9EF'
+
+cont29.appendChild(color29)
+cont29.appendChild(color29code)
+colorCont.appendChild(cont29)
+
+const color30 = document.createElement('div')
+const cont30 = document.createElement('div')
+cont30.style.display = 'grid'
+cont30.style.gap = '10px'
+cont30.style.margin = 'auto'
+cont30.style.width = '300px'
+color30.style.width = '90%'
+color30.style.height = '200px'
+color30.style.background = '#F7DC6F'
+color30.style.borderRadius = '10px'
+color30.style.margin = '4px'
+const color30code = document.createElement('p')
+color30code.style.color = 'gray'
+color30code.style.fontSize = '16px'
+color30code.style.fontFamily = 'monospace'
+color30code.textContent = 'Color code: #F7DC6F'
+
+cont30.appendChild(color30)
+cont30.appendChild(color30code)
+colorCont.appendChild(cont30)
+
+const color31 = document.createElement('div')
+const cont31 = document.createElement('div')
+cont31.style.display = 'grid'
+cont31.style.gap = '10px'
+cont31.style.margin = 'auto'
+cont31.style.width = '300px'
+color31.style.width = '90%'
+color31.style.height = '200px'
+color31.style.background = '#455A64'
+color31.style.borderRadius = '10px'
+color31.style.margin = '4px'
+const color31code = document.createElement('p')
+color31code.style.color = 'gray'
+color31code.style.fontSize = '16px'
+color31code.style.fontFamily = 'monospace'
+color31code.textContent = 'Color code: #455A64'
+
+cont31.appendChild(color31)
+cont31.appendChild(color31code)
+colorCont.appendChild(cont31)
+
+const color32 = document.createElement('div')
+const cont32 = document.createElement('div')
+cont32.style.display = 'grid'
+cont32.style.gap = '10px'
+cont32.style.margin = 'auto'
+cont32.style.width = '300px'
+color32.style.width = '90%'
+color32.style.height = '200px'
+color32.style.background = '#2196F3'
+color32.style.borderRadius = '10px'
+color32.style.margin = '4px'
+const color32code = document.createElement('p')
+color32code.style.color = 'gray'
+color32code.style.fontSize = '16px'
+color32code.style.fontFamily = 'monospace'
+color32code.textContent = 'Color code: #2196F3'
+
+cont32.appendChild(color32)
+cont32.appendChild(color32code)
+colorCont.appendChild(cont32)
+
+const color33 = document.createElement('div')
+const cont33 = document.createElement('div')
+cont33.style.display = 'grid'
+cont33.style.gap = '10px'
+cont33.style.margin = 'auto'
+cont33.style.width = '300px'
+color33.style.width = '90%'
+color33.style.height = '200px'
+color33.style.background = '#FFC107'
+color33.style.borderRadius = '10px'
+color33.style.margin = '4px'
+const color33code = document.createElement('p')
+color33code.style.color = 'gray'
+color33code.style.fontSize = '16px'
+color33code.style.fontFamily = 'monospace'
+color33code.textContent = 'Color code: #FFC107'
+
+cont33.appendChild(color33)
+cont33.appendChild(color33code)
+colorCont.appendChild(cont33)
+
+const color34 = document.createElement('div')
+const cont34 = document.createElement('div')
+cont34.style.display = 'grid'
+cont34.style.gap = '10px'
+cont34.style.margin = 'auto'
+cont34.style.width = '300px'
+color34.style.width = '90%'
+color34.style.height = '200px'
+color34.style.background = '#8F0A1A'
+color34.style.borderRadius = '10px'
+color34.style.margin = '4px'
+const color34code = document.createElement('p')
+color34code.style.color = 'gray'
+color34code.style.fontSize = '16px'
+color34code.style.fontFamily = 'monospace'
+color34code.textContent = 'Color code: #8F0A1A'
+
+cont34.appendChild(color34)
+cont34.appendChild(color34code)
+colorCont.appendChild(cont34)
+
+const color35 = document.createElement('div')
+const cont35 = document.createElement('div')
+cont35.style.display = 'grid'
+cont35.style.gap = '10px'
+cont35.style.margin = 'auto'
+cont35.style.width = '300px'
+color35.style.width = '90%'
+color35.style.height = '200px'
+color35.style.background = '#4DD0E1'
+color35.style.borderRadius = '10px'
+color35.style.margin = '4px'
+const color35code = document.createElement('p')
+color35code.style.color = 'gray'
+color35code.style.fontSize = '16px'
+color35code.style.fontFamily = 'monospace'
+color35code.textContent = 'Color code: #4DD0E1'
+
+cont35.appendChild(color35)
+cont35.appendChild(color35code)
+colorCont.appendChild(cont35)
+
+const color36 = document.createElement('div')
+const cont36 = document.createElement('div')
+cont36.style.display = 'grid'
+cont36.style.gap = '10px'
+cont36.style.margin = 'auto'
+cont36.style.width = '300px'
+color36.style.width = '90%'
+color36.style.height = '200px'
+color36.style.background = '#9E9E9E' // Gray
+color36.style.borderRadius = '10px'
+color36.style.margin = '4px'
+const color36code = document.createElement('p')
+color36code.style.color = 'gray'
+color36code.style.fontSize = '16px'
+color36code.style.fontFamily = 'monospace'
+color36code.textContent = 'Color code: #9E9E9E'
+
+cont36.appendChild(color36)
+cont36.appendChild(color36code)
+colorCont.appendChild(cont36)
+
+const color37 = document.createElement('div')
+const cont37 = document.createElement('div')
+cont37.style.display = 'grid'
+cont37.style.gap = '10px'
+cont37.style.margin = 'auto'
+cont37.style.width = '300px'
+color37.style.width = '90%'
+color37.style.height = '200px'
+color37.style.background = '#3F51B5' // Dark Blue
+color37.style.borderRadius = '10px'
+color37.style.margin = '4px'
+const color37code = document.createElement('p')
+color37code.style.color = 'gray'
+color37code.style.fontSize = '16px'
+color37code.style.fontFamily = 'monospace'
+color37code.textContent = 'Color code: #3F51B5'
+
+cont37.appendChild(color37)
+cont37.appendChild(color37code)
+colorCont.appendChild(cont37)
+
+const color38 = document.createElement('div')
+const cont38 = document.createElement('div')
+cont38.style.display = 'grid'
+cont38.style.gap = '10px'
+cont38.style.margin = 'auto'
+cont38.style.width = '300px'
+color38.style.width = '90%'
+color38.style.height = '200px'
+color38.style.background = '#FF9800' // Orange-Red
+color38.style.borderRadius = '10px'
+color38.style.margin = '4px'
+const color38code = document.createElement('p')
+color38code.style.color = 'gray'
+color38code.style.fontSize = '16px'
+color38code.style.fontFamily = 'monospace'
+color38code.textContent = 'Color code: #FF9800'
+
+cont38.appendChild(color38)
+cont38.appendChild(color38code)
+colorCont.appendChild(cont38)
+
+const color40 = document.createElement('div')
+const cont40 = document.createElement('div')
+cont40.style.display = 'grid'
+cont40.style.gap = '10px'
+cont40.style.margin = 'auto'
+cont40.style.width = '300px'
+color40.style.width = '90%'
+color40.style.height = '200px'
+color40.style.background = '#4CAF50' // Teal
+color40.style.borderRadius = '10px'
+color40.style.margin = '4px'
+const color40code = document.createElement('p')
+color40code.style.color = 'gray'
+color40code.style.fontSize = '16px'
+color40code.style.fontFamily = 'monospace'
+color40code.textContent = 'Color code: #4CAF50'
+
+cont40.appendChild(color40)
+cont40.appendChild(color40code)
+colorCont.appendChild(cont40)
+
+const color41 = document.createElement('div')
+const cont41 = document.createElement('div')
+cont41.style.display = 'grid'
+cont41.style.gap = '10px'
+cont41.style.margin = 'auto'
+cont41.style.width = '300px'
+color41.style.width = '90%'
+color41.style.height = '200px'
+color41.style.background = '#9C27B0' // Deep Purple
+color41.style.borderRadius = '10px'
+color41.style.margin = '4px'
+const color41code = document.createElement('p')
+color41code.style.color = 'gray'
+color41code.style.fontSize = '16px'
+color41code.style.fontFamily = 'monospace'
+color41code.textContent = 'Color code: #9C27B0'
+
+cont41.appendChild(color41)
+cont41.appendChild(color41code)
+colorCont.appendChild(cont41)
+
+const color42 = document.createElement('div')
+const cont42 = document.createElement('div')
+cont42.style.display = 'grid'
+cont42.style.gap = '10px'
+cont42.style.margin = 'auto'
+cont42.style.width = '300px'
+color42.style.width = '90%'
+color42.style.height = '200px'
+color42.style.background = '#E91E63' // Pink
+color42.style.borderRadius = '10px'
+color42.style.margin = '4px'
+const color42code = document.createElement('p')
+color42code.style.color = 'gray'
+color42code.style.fontSize = '16px'
+color42code.style.fontFamily = 'monospace'
+color42code.textContent = 'Color code: #E91E63'
+
+cont42.appendChild(color42)
+cont42.appendChild(color42code)
+colorCont.appendChild(cont42)
+
+const color43 = document.createElement('div')
+const cont43 = document.createElement('div')
+cont43.style.display = 'grid'
+cont43.style.gap = '10px'
+cont43.style.margin = 'auto'
+cont43.style.width = '300px'
+color43.style.width = '90%'
+color43.style.height = '200px'
+color43.style.background = '#2196F3' // Blue
+color43.style.borderRadius = '10px'
+color43.style.margin = '4px'
+const color43code = document.createElement('p')
+color43code.style.color = 'gray'
+color43code.style.fontSize = '16px'
+color43code.style.fontFamily = 'monospace'
+color43code.textContent = 'Color code: #2196F3'
+
+cont43.appendChild(color43)
+cont43.appendChild(color43code)
+colorCont.appendChild(cont43)
+
+const color44 = document.createElement('div')
+const cont44 = document.createElement('div')
+cont44.style.display = 'grid'
+cont44.style.gap = '10px'
+cont44.style.margin = 'auto'
+cont44.style.width = '300px'
+color44.style.width = '90%'
+color44.style.height = '200px'
+color44.style.background = '#F44336' // Red
+color44.style.borderRadius = '10px'
+color44.style.margin = '4px'
+const color44code = document.createElement('p')
+color44code.style.color = 'gray'
+color44code.style.fontSize = '16px'
+color44code.style.fontFamily = 'monospace'
+color44code.textContent = 'Color code: #F44336'
+
+cont44.appendChild(color44)
+cont44.appendChild(color44code)
+colorCont.appendChild(cont44)
+
+const color45 = document.createElement('div')
+const cont45 = document.createElement('div')
+cont45.style.display = 'grid'
+cont45.style.gap = '10px'
+cont45.style.margin = 'auto'
+cont45.style.width = '300px'
+color45.style.width = '90%'
+color45.style.height = '200px'
+color45.style.background = '#009688' // Teal
+color45.style.borderRadius = '10px'
+color45.style.margin = '4px'
+const color45code = document.createElement('p')
+color45code.style.color = 'gray'
+color45code.style.fontSize = '16px'
+color45code.style.fontFamily = 'monospace'
+color45code.textContent = 'Color code: #009688'
+
+cont45.appendChild(color45)
+cont45.appendChild(color45code)
+colorCont.appendChild(cont45)
+    
+    container.appendChild(colorCont)
+    container.style.animation = 'none'
+    document.getElementById('cont').appendChild(container)
+
+
+}
 
 function content() {
 
@@ -832,6 +1743,8 @@ function content() {
     l1.addEventListener('click', () => {
         document.getElementById('paraa').style.animation = "none"
         document.getElementById('headd').style.animation = "none"
+        document.getElementById('colors').style.display = 'none'
+        document.getElementById('colors').style.animation = 'none'
         document.getElementById('inp').style.animation = "none"
         l1.style.animation = "none"
         l2.style.animation = 'none'
@@ -857,6 +1770,7 @@ function content() {
         }, 30)
     })
     l2.addEventListener('click', () => {
+        document.getElementById('colors').style.display = 'none'
         l1.style.animation = "none"
         document.getElementById('inp').style.animation = "none"
         l2.style.animation = 'none'
@@ -882,6 +1796,7 @@ function content() {
     })
 }, 30)
     l3.addEventListener('click', () => {
+        document.getElementById('colors').style.display =  'flex'
         document.getElementById('classer').style.display = 'none'
         document.getElementById('classer2').style.display = 'none'
         document.getElementById('classer3').style.display = 'none'
@@ -897,6 +1812,12 @@ function content() {
         document.getElementById('classer4').style.display = 'none'
         document.getElementById('paraa').textContent = "this is the colors section"
         document.getElementById('headd').textContent=' welcome on the colors class'
+        
+        document.getElementById('colors').style.animation = "1s In"
+        setTimeout(() => {
+            document.getElementById('colors').style.animation = 'none'
+        }, 300)
+        
 
     })
     container();
@@ -1015,19 +1936,22 @@ function classes() {
         document.body.appendChild(button)
         button.addEventListener('click', () => {
             document.getElementById('details').style.display = 'block'
+            document.getElementById('footer').style.marginBottom = '-680px'
         })
     }
     input()
     result()
-    details = () => {
-        let details = document.createElement('div')
+    function details() {
+    let details = document.createElement('div')
     let styles = document.createElement('style')
     details.id = 'details'
     details.className = 'details'
-    details.style.position = 'fixed'
+    details.style.position = 'relative'
+    details.style.zIndex = '999'
     details.style.width = '90%'
+    details.marginTop = '40px !important'
     details.style.marginLeft= '50%'
-    details.style.transform = 'translate(-50%)'
+    details.style.transform = 'translate(-50%, -880px)'
     details.style.background='rgb(0, 0, 0, .8)'
     details.style.minHeight = '85vh'
     details.style.height = 'auto'
@@ -1052,6 +1976,7 @@ function classes() {
 
     x.addEventListener('click', () => {
         details.style.display = 'none'
+        document.getElementById('footer').style.marginBottom = '0px'
     })
 
     const code = document.createElement('div')
@@ -1073,10 +1998,14 @@ function classes() {
     copy.addEventListener('click', ()=> {
         success.style.transform = 'translate(-50%, 0%)'
         success.style.opacity = '1'
+        navigator.clipboard.writeText(cd.textContent)
+        copy.style.border = 'solid 1px green'
         setTimeout(() => {
             success.style.transform = 'translate(-50%, -150%)'
+            copy.style.border = 'solid 1px gray'
             success.style.opacity = '0'
         }, 2000)
+        
     })
     
     copy.style.width = '120px'
@@ -1106,7 +2035,7 @@ function classes() {
     success.style.background = 'transparent'
     success.style.border = 'solid 1px gray'
     success.style.left = '50%'
-    success.style.transform = 'translate(-50%, -150%)'
+    success.style.transform = 'translate(-50%, -250%)'
     success.style.transition =' all .2s'
     details.appendChild(success)
     const tag = document.createElement('h1')
@@ -1173,31 +2102,30 @@ function classes() {
     fw.style.textTransform = 'none'
     fw.style.transform = 'translate(30px, -0px)'
     fw.id = 'fw'
-
+    const cd = document.createElement('div')
     endTag.style.color = 'white'
     endTag.textContent = '}'
     endTag.id = 'end'
-    code.appendChild(tag)
-    code.appendChild(w)
-    code.appendChild(h)
-    code.appendChild(c)
-    code.appendChild(bg)
-    code.appendChild(b)
-    code.appendChild(bw)
-    code.appendChild(bc)
-    code.appendChild(br)
-    code.appendChild(ff)
-    code.appendChild(fs)
-    code.appendChild(fst)
-    code.appendChild(endTag)
+    cd.appendChild(tag)
+    cd.appendChild(w)
+    cd.appendChild(h)
+    cd.appendChild(c)
+    cd.appendChild(bg)
+    cd.appendChild(b)
+    cd.appendChild(bw)
+    cd.appendChild(bc)
+    cd.appendChild(br)
+    cd.appendChild(ff)
+    cd.appendChild(fs)
+    cd.appendChild(fst)
+    cd.appendChild(endTag)
+    code.appendChild(cd)
     code.appendChild(copy)
     }
     details()
 }
 
-content()
-classes()
-footer()
+
 
 function listeners() {
 
@@ -1249,21 +2177,13 @@ function listeners() {
     borderWidth.style.display = 'none'
     borderColor.style.display = 'none'
     borderStyle.addEventListener('input', () => {
-        if ((borderStyle.value === 'solid') || (borderStyle.value === 'Solid')) {
-            borderWidth.style.display = 'block'
-            borderColor.style.display = 'block'
-            document.getElementById('result').style.top = '-1460px'
-        } else {
-            borderWidth.style.display = 'none'
-            document.getElementById('result').style.top = '-1320px'
-
-            borderColor.style.display = 'none'
-        }
-
-        result.style.borderStyle = borderStyle.value
+        borderWidth.style.display = 'none'
+        document.getElementById('result').style.top = '-1320px'
+        borderColor.style.display = 'none'
+        result.style.border = borderStyle.value
         
 
-        document.getElementById('b').textContent = 'border-style: ' + borderStyle.value + ';'
+        document.getElementById('b').textContent = 'border: ' + borderStyle.value + ';'
     })
 
     borderColor.addEventListener('input', () => {
@@ -1327,6 +2247,12 @@ function listeners() {
     })
     
 }
-listeners()
 
+
+
+content()
+colors()
+classes()
+footer()
+listeners()
 
