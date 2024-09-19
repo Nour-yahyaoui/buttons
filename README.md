@@ -14,5 +14,5 @@ To use this website , follow these steps:
 
 -----
 
-when finnaly finding whant do you looking for or creating it, just click on the button you like or you create to copy it easly, and the same thing for the color section (coming soon).
+when finnaly finding whant do you looking for or creating it, just click on the button you like or you create to copy it easly, and the same thing for the color section.
 
