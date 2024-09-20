@@ -1767,7 +1767,7 @@ function content() {
             document.getElementById('classer4').style.display = 'none'
             document.getElementById('paraa').textContent = "make your button yourself, be creative!"
             document.getElementById('headd').textContent=' welcome on the creation class'
-        }, 30)
+        }, 0)
     })
     l2.addEventListener('click', () => {
         document.getElementById('colors').style.display = 'none'
@@ -1794,7 +1794,7 @@ function content() {
         document.getElementById('paraa').textContent = "click on the button to copy code"
         document.getElementById('headd').textContent=' welcome on the ready class'
     })
-}, 30)
+}, 0)
     l3.addEventListener('click', () => {
         document.getElementById('colors').style.display =  'flex'
         document.getElementById('classer').style.display = 'none'
@@ -1816,7 +1816,7 @@ function content() {
         document.getElementById('colors').style.animation = "1s In"
         setTimeout(() => {
             document.getElementById('colors').style.animation = 'none'
-        }, 300)
+        }, 0)
         
 
     })
